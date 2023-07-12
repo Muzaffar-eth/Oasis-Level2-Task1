@@ -1,0 +1,76 @@
+body {
+    background-image: url("https://res.cloudinary.com/pendragon/image/upload/v1668802784/wood-background-pattern-02_wpahdy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .calculator {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+    background-color: #848484;
+    color: #fff;
+  }
+  
+  .calculator h1 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  input[type="text"] {
+    display: block;
+    width: 98%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    text-align: right;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d6d6d6;
+  }
+  
+  .clear {
+    grid-column: span 4;
+  }
+  
+  /* Calculator screen effect */
+  .calculator .buttons:active {
+    box-shadow: none;
+  }
+  
+  .calculator .buttons:active button {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #dcdcdc;
+  }
+  
